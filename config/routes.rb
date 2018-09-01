@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+ resources :kitten
+ get 'kitten/index'
+ get 'kitten/new'
+ get 'kitten/show'
+ get 'kitten/edit'
+root 'kitten#index' 
 end
